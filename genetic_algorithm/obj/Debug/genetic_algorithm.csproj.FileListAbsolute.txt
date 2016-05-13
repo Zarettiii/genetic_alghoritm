@@ -1,0 +1,9 @@
+C:\Users\Александр\Documents\genetic_algorithm\genetic_algorithm\bin\Debug\genetic_algorithm.exe.config
+C:\Users\Александр\Documents\genetic_algorithm\genetic_algorithm\bin\Debug\genetic_algorithm.exe
+C:\Users\Александр\Documents\genetic_algorithm\genetic_algorithm\bin\Debug\genetic_algorithm.pdb
+C:\Users\Александр\Documents\genetic_algorithm\genetic_algorithm\obj\Debug\genetic_algorithm.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Documents\genetic_algorithm\genetic_algorithm\obj\Debug\genetic_algorithm.Form1.resources
+C:\Users\Александр\Documents\genetic_algorithm\genetic_algorithm\obj\Debug\genetic_algorithm.Properties.Resources.resources
+C:\Users\Александр\Documents\genetic_algorithm\genetic_algorithm\obj\Debug\genetic_algorithm.csproj.GenerateResource.Cache
+C:\Users\Александр\Documents\genetic_algorithm\genetic_algorithm\obj\Debug\genetic_algorithm.exe
+C:\Users\Александр\Documents\genetic_algorithm\genetic_algorithm\obj\Debug\genetic_algorithm.pdb
