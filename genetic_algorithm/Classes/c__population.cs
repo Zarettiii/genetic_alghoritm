@@ -179,8 +179,11 @@ namespace genetic_algorithm.Classes
          */
         public int get_avg_weight()
         {
-            int i__sum_weight = 0; // Сумма весов п популяции
+            int i__sum_weight = 0; // Сумма весов в популяции
 
+            //
+            // Проссумировать значение весов
+            //
             foreach (c__individual ind__item in l__individual)
             {
                 i__sum_weight += ind__item.get_adeptness(); // Прибавить вес
@@ -239,7 +242,7 @@ namespace genetic_algorithm.Classes
             int i__mutation_index; // Индекс параметра который изменится
 
             //
-            // Изменить случайное количество случайных параметров
+            // Изменить случайное количество случайных параметров у особей
             //
             for (int i__1 = 0; i__1 < rnd__random.Next(1, 4); i__1++)
             {

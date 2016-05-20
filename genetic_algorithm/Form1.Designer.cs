@@ -42,13 +42,14 @@
             this.chrt_max_weight = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btn_calculate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chrt_avg_weight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chrt_max_weight)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_result
             // 
-            this.txt_result.Location = new System.Drawing.Point(156, 72);
+            this.txt_result.Location = new System.Drawing.Point(156, 60);
             this.txt_result.Name = "txt_result";
             this.txt_result.Size = new System.Drawing.Size(132, 20);
             this.txt_result.TabIndex = 0;
@@ -72,7 +73,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 75);
+            this.label2.Location = new System.Drawing.Point(33, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 13);
             this.label2.TabIndex = 3;
@@ -128,11 +129,22 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Изменения максимального совпадения популяции";
             // 
+            // btn_calculate
+            // 
+            this.btn_calculate.Location = new System.Drawing.Point(120, 86);
+            this.btn_calculate.Name = "btn_calculate";
+            this.btn_calculate.Size = new System.Drawing.Size(75, 23);
+            this.btn_calculate.TabIndex = 8;
+            this.btn_calculate.Text = "Расчитать";
+            this.btn_calculate.UseVisualStyleBackColor = true;
+            this.btn_calculate.Click += new System.EventHandler(this.btn_calculate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(345, 531);
+            this.Controls.Add(this.btn_calculate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.chrt_max_weight);
@@ -142,7 +154,7 @@
             this.Controls.Add(this.txt_key);
             this.Controls.Add(this.txt_result);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Генетический алгоритм";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chrt_avg_weight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chrt_max_weight)).EndInit();
@@ -161,6 +173,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chrt_max_weight;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btn_calculate;
     }
 }
 

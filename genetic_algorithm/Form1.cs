@@ -7,15 +7,20 @@ namespace genetic_algorithm
 {
     public partial class Form1 : Form
     {
+        public List<int> l__i__key; // Список значений, которые загадали
+
+
+
         public Form1()
         {
             InitializeComponent();
         }
 
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            List<int> l__i__key = new List<int>(); // Список значений, которые загадали
-            string    s__result = "";              // Результат работы генетического алгоритма                 
+            l__i__key = new List<int>(); // Установить cписок значений, которые загадали
 
 
             //
@@ -40,13 +45,26 @@ namespace genetic_algorithm
             }
 
             txt_key.Text = s__key; // Вывести загаданное значение на форму
+        }
 
+
+
+        private void btn_calculate_Click(object sender, EventArgs e)
+        {
+            //
+            // Очистить графики от старых значений
+            //
+            chrt_avg_weight.Series["Avg"].Points.Clear();
+            chrt_max_weight.Series["Max"].Points.Clear();
+
+
+            string s__result = "";               // Результат работы генетического алгоритма                             
 
             c__population.l__i__key = l__i__key; // Установить в популяции искомые значения
 
 
             c__population pop__population = new c__population();
-            
+
 
             //
             // Выполнить итерации генетического алгоритма
@@ -61,7 +79,7 @@ namespace genetic_algorithm
                 //
                 // Добваить значение максимального вес на график
                 //
-                chrt_max_weight.Series["Max"].Points.AddXY(i__1, pop__population.get_best_individual().get_adeptness()); 
+                chrt_max_weight.Series["Max"].Points.AddXY(i__1, pop__population.get_best_individual().get_adeptness());
 
 
                 pop__population.make_cycle(); // Выполнить жизненный цикл
@@ -79,6 +97,5 @@ namespace genetic_algorithm
 
             txt_result.Text = s__result; // Вывести результат на форму
         }
-
     }
 }
