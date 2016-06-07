@@ -69,17 +69,17 @@ namespace genetic_algorithm
             //
             // Выполнить итерации генетического алгоритма
             //
-            for (int i__1 = 0; i__1 < 10; i__1++)
+            for (int i__1 = 0; i__1 < 20; i__1++)
             {
                 //
                 // Добваить значение среднего веса на график
                 //
-                chrt_avg_weight.Series["Avg"].Points.AddXY(i__1, pop__population.get_avg_weight());
+                chrt_avg_weight.Series["Avg"].Points.AddXY(i__1 + 1, pop__population.get_avg_weight());
 
                 //
                 // Добваить значение максимального вес на график
                 //
-                chrt_max_weight.Series["Max"].Points.AddXY(i__1, pop__population.get_best_individual().get_adeptness());
+                chrt_max_weight.Series["Max"].Points.AddXY(i__1 + 1, pop__population.get_best_individual().get_adeptness());
 
 
                 pop__population.make_cycle(); // Выполнить жизненный цикл
